@@ -1,0 +1,20 @@
+.newsletter {
+  max-width: 600px;
+  margin: auto;
+}
+#newsletter__form {
+  width: 300px;
+  margin: auto;
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid var(--gray);
+  }
+}
+
+.form__button_container {
+  text-align: center;
+}

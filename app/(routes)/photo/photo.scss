@@ -1,0 +1,32 @@
+@import '../../_styles/mixin';
+
+.home__text {
+  color: var(--red);
+}
+
+.home__item {
+  @include title('blue');
+}
+
+.home__title {
+  text-align: center;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.home__card {
+  text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.home__card_text {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+  &__logo_container {
+    position: relative;
+    width: 200px;
+    margin-left: 25px;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .navbar__link {
+      text-decoration: none;
+      color: var(--black);
+      margin: 0 20px;
+      align-self: center;
+
+      &:visited {
+        color: var(--black);
+      }
+    }
+  }
+}

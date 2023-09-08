@@ -1,0 +1,23 @@
+@import "media-queries";
+
+@mixin title($color) {
+  font-size: 50px;
+  text-decoration: underline;
+  color: $color;
+}
+
+@mixin for_media($breakpoints) {
+  $conditions: ();
+
+  @each $breakpoint in $breakpoints {
+    $conditions: append(
+      $conditions,
+      #{inspect(map-get($media_queries, $breakpoint))},
+      comma
+    );
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}

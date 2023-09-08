@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixin';
+
+body {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+
+    &:visited {
+      color: var(--black);
+    }
+  }
+
+  .title {
+    color: var(--red);
+  }
+}

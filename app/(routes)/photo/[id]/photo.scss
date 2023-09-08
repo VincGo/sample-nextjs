@@ -1,0 +1,17 @@
+@import '../../../_styles/mixin';
+
+.photo__container {
+  text-align: center;
+}
+
+.photo__image_container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+
+  @include for_media(mobile) {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,18 @@
+.card {
+  text-align: center;
+  border-radius: 20px;
+  padding: 0 20px;
+
+  &__image_container {
+    position: relative;
+    height: 300px;
+  }
+
+  &:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+
+  &__text {
+    text-align: left;
+  }
+}

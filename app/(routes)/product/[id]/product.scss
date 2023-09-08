@@ -1,0 +1,30 @@
+@import '../../../_styles/mixin';
+
+.product {
+  max-width: 800px;
+  margin: auto;
+
+  @include for_media('mobile') {
+    width: 80%;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__image_container {
+    position: relative;
+    height: 350px;
+
+    img {
+      width: auto !important;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__description {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+}

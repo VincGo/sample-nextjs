@@ -1,0 +1,26 @@
+@import '../_styles/mixin';
+
+.home__text {
+  color: var(--red);
+}
+
+.home__item {
+  @include title('blue');
+}
+
+.home__title {
+  text-align: center;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+
+  @include for_media('mobile') {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+  }
+}
